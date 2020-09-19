@@ -4,7 +4,7 @@ from spam.db import Conexao
 from spam.models.modelos import Usuario
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def conexao():
     # Setup
     c_obj = Conexao()
